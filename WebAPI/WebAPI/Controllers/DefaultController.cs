@@ -20,5 +20,11 @@ namespace WebAPI.Controllers
         {
             return Ok($"Bye {name}");
         }
+
+        [AcceptVerbs("GET")]
+        public IHttpActionResult Yell(string name = "no name")
+        {
+            return Ok($"Get on {name}");
+        }
     }
 }
