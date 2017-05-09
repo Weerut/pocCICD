@@ -32,7 +32,7 @@ namespace SUT.Tests
         }
 
         [Test]
-        public void ShouldMulTwoNumbers()
+        public void AlwaysTrue()
         {
             int expectedResult = sut.Mul(7, 8);
             Assert.That(expectedResult, Is.EqualTo(56));
